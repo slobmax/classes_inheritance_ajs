@@ -4,13 +4,13 @@ export default class Character {
     if (name.length >= 2 && name.length <= 10) {
       this.name = name;
     } else {
-      throw new Error('Некорректные значения');
+      throw new Error('Некорректные значения в name');
     }
 
     if (types.includes(type)) {
       this.type = type;
     } else {
-      throw new Error('Некорректные значения');
+      throw new Error('Некорректные значения в type');
     }
 
     this.health = 100;

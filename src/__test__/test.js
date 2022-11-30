@@ -84,7 +84,7 @@ test('Создание нового персонажа Zombie', () => {
   expect(received).toEqual(expected);
 });
 
-test('Класс Character, выброс ошибки', () => {
+test('Класс Character, проверка name', () => {
   function genErr() {
     const received = new Character('n', 'Bowman');
     return received;
@@ -92,7 +92,7 @@ test('Класс Character, выброс ошибки', () => {
   expect(genErr).toThrow();
 });
 
-test('Класс Character, выброс ошибки', () => {
+test('Класс Character, проверка type', () => {
   function genErr() {
     const received = new Character('Bowman', 'm');
     return received;
