@@ -86,7 +86,15 @@ test('Создание нового персонажа Zombie', () => {
 
 test('Класс Character, выброс ошибки', () => {
   function genErr() {
-    const received = new Character('n', 'm');
+    const received = new Character('n', 'Bowman');
+    return received;
+  }
+  expect(genErr).toThrow();
+});
+
+test('Класс Character, выброс ошибки', () => {
+  function genErr() {
+    const received = new Character('Bowman', 'm');
     return received;
   }
   expect(genErr).toThrow();
